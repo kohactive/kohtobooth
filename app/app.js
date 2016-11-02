@@ -8,6 +8,12 @@ let App;
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
 App = Ember.Application.extend({
+  ready: function() {
+    Ember.$(document).ready(function() {
+      new freezeframe().freeze();
+    })
+  },
+
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
   Resolver

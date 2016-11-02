@@ -1,0 +1,6 @@
+.modal{action "close"}
+  .overlay
+  .modal-image
+    .close
+      fa-icon "times-circle"
+    img src=imgSrc

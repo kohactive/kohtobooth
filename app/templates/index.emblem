@@ -1,0 +1,26 @@
+header
+  .container
+    .pull-left
+      img src="assets/images/psykoh-logo.png"
+    a.pull-right href="https://www.kohactive.com/" target="_blank"
+      img src="assets/images/kohactive-logo.png"
+
+.gifs
+  .row.omega-sm-3.omega-md-3.omega-lg-4
+    each model as |image|
+      gif-thumbnail image=image action="showImage"
+
+= outlet
+
+footer
+  .container
+    .pull-left
+      | Thank you for coming!
+
+    .pull-right
+      a href="https://twitter.com/kohactive" target="_blank"
+        fa-icon "twitter-square"
+      a href="https://www.instagram.com/kohactive/" target="_blank"
+        fa-icon "instagram"
+      a href="https://www.facebook.com/kohactive" target="_blank"
+        fa-icon "facebook-square"

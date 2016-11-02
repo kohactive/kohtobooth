@@ -1,0 +1,125 @@
+$color-rosewood : #630000
+
+body
+  padding-top: 96px
+  padding-bottom: 70px
+  background-color: black
+  color: white
+  font-family: "Raleway", sans-serif
+  font-weight: 600
+
+header
+  position: fixed
+  z-index: 2
+  width: 100%
+  top: 0
+  padding: 18px 0
+  background-color: black
+
+  .pull-right
+    padding: 12px 0
+
+  +media-xs
+    text-align: center
+
+    .pull-left,
+    .pull-right
+      float: none
+      display: block
+
+    .pull-right
+      img
+        width: 150px
+
+.container
+  padding-left: 20px
+  padding-right: 20px
+
+.gifs
+  .gif
+    text-align: center
+    cursor: pointer
+
+  canvas
+    width: 100%
+    vertical-align: middle
+
+  img
+    max-width: 100%
+    vertical-align: middle
+
+.modal
+  position: fixed
+  z-index: 10
+  top: 0
+  width: 100vw
+  height: 100vh 
+
+  .close  
+    position: absolute
+    right: 5%
+    top: -15%
+    color: $color-rosewood
+    font-size: 25px
+    cursor: pointer
+    +transition
+
+    +media-sm
+      right: 20%
+      top: -10%
+
+    &:hover
+      color: darken($color-rosewood, 5%)
+
+.overlay
+  position: fixed
+  top: 0
+  width: 100vw
+  height: 100vh
+  background-color: rgba(black, 0.8)
+  text-align: center
+
+.modal-image
+  position: fixed
+  top: 50%
+  transform: translateY(-50%)
+  width: 100%
+  text-align: center
+  
+  img
+    max-width: 100%
+
+footer
+  position: fixed
+  z-index: 2
+  bottom: 0
+  width: 100%
+  padding: 20px 0
+  background-color: black
+  text-transform: uppercase
+
+  .pull-left
+    color: #636363
+    line-height: 30px
+
+  .pull-right
+    a
+      margin-left: 10px
+      color: $color-rosewood
+      font-size: 25px
+      +transition
+
+      &:hover
+        color: darken($color-rosewood, 5%)
+
+  +media-xs
+    text-align: center
+
+    .pull-left,
+    .pull-right
+      float: none
+      display: block
+
+    .pull-left
+      margin-bottom: 10px
+      font-size: 14px
