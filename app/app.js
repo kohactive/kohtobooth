@@ -11,7 +11,7 @@ App = Ember.Application.extend({
   ready: function() {
     Ember.$(document).ready(function() {
       new freezeframe().freeze();
-    })
+    });
   },
 
   modulePrefix: config.modulePrefix,

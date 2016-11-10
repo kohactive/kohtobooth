@@ -1,18 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    function pad(n, width, z) {
-      z = z || '0';
-      n = n + '';
-      return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
-    }
+  images: Ember.inject.service(),
 
-    let filenames = [];
-    for (var i = 1; i <= 105; i++) {
-      filenames.push('SB-QppknN-000' + pad(i, 3));
-    }
-    return filenames;
+  model() {
+    return this.get('images').filenames();
   },
 
   actions: {
