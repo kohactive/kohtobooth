@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import Component from '@ember/component';
 
-export default Ember.Component.extend({
+export default Component.extend({
   classNames: ['gif col-sm-collapse-4 col-lg-collapse-3'],
 
   click() {
