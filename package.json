@@ -1,8 +1,8 @@
 {
-  "name": "psykohbooth",
+  "name": "darkohbooth",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for psykohbooth goes here",
+  "description": "Small description for darkohbooth goes here",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -48,6 +48,7 @@
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.16.0",
     "ember-truth-helpers": "1.2.0",
+    "emberfire": "^2.0.8",
     "loader.js": "^4.2.3",
     "manhattan-sass": "^0.6.1",
     "normalize-scss": "^7.0.0"

@@ -3,7 +3,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'psykohbooth',
+    modulePrefix: 'darkohbooth',
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -21,6 +21,12 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    firebase: {
+      authDomain: 'darkohbooth.firebaseapp.com',
+      databaseURL: 'https://darkohbooth.firebaseio.com',
+      storageBucket: 'darkohbooth.appspot.com',
     }
   };
 

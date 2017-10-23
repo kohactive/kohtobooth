@@ -8,9 +8,9 @@ const App = Application.extend({
   podModulePrefix: config.podModulePrefix,
   Resolver,
   ready: function() {
-    Ember.$(document).ready(function() {
-      new freezeframe().freeze();
-    });
+    // Ember.$(document).ready(function() {
+    //   new freezeframe().freeze();
+    // });
   }
 });
 

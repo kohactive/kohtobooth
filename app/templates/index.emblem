@@ -8,7 +8,7 @@ header
 .gifs
   .row.omega-sm-3.omega-md-3.omega-lg-4
     each model as |image|
-      gif-thumbnail image=image action="showImage"
+      gif-thumbnail image=image action="showImage" src=image.webContentLink
 
 = outlet
 
