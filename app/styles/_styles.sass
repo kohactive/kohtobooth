@@ -1,7 +1,7 @@
 $color-rosewood : #630000
 
 body
-  padding-top: 96px
+  padding-top: 85px
   padding-bottom: 70px
   background-color: black
   color: white
@@ -16,8 +16,18 @@ header
   padding: 18px 0
   background-color: black
 
+  > .container
+    +media-md
+      display: flex
+      align-items: center
+
   .pull-right
+    margin-left: auto
     padding: 12px 0
+
+  img
+    height: 25px
+    vertical-align: middle
 
   +media-xs
     text-align: center
