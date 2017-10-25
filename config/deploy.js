@@ -20,7 +20,8 @@ module.exports = function(deployTarget) {
     bucket: process.env.AWS_BUCKET,
     region: process.env.AWS_REGION,
     prefix: process.env.AWS_DIRECTORY,
-    allowOverwrite: true
+    allowOverwrite: true,
+    cacheControl: 'max-age=0, no-cache, no-store, must-revalidate'
   };
 
   if (deployTarget === 'development') {
