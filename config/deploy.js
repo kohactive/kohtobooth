@@ -6,6 +6,10 @@ module.exports = function(deployTarget) {
     // include other plugin configuration that applies to all deploy targets here
   };
 
+  ENV['pipeline'] = {
+    activateOnDeploy: true
+  };
+
   ENV.s3 = {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
