@@ -1,7 +1,17 @@
-# darkohbooth
+# kohtobooth
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+* [2017 Halloween Party - darkohbooth.kohactive.com](darkohbooth.kohactive.com)
+* [2016 Halloween Party - psykohbooth.kohactive.com](psykohbooth.kohactive.com)
+
+## The Physical Photobooth Setup
+
+* iPad on a stand with a ring light
+* [Simple Booth Event Edition app](https://www.simplebooth.com/apps)
+
+## How the Images Get to this App
+* [ifttt](https://itunes.apple.com/us/app/ifttt/id660944635?mt=8) app pushes all new photos on the iPad to a Google Drive folder(currently info@kohactive.com/Halloween Photo Booth/2017)
+  * The ifttt app must be running in the background for this to happen(should run every 5-10 mins), otherwise it will sync every time the ifttt app is opened.
+* [Zapier](zapier.com) checks the Drive folder every 5 minutes and sends a new record to [Firebase](https://firebase.google.com) for each new photo
 
 ## Prerequisites
 
