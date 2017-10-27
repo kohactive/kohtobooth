@@ -1,1 +1,1 @@
-img.freezeframe src="assets/images/gifs/#{image}.gif"
+img.freezeframe src=image.webContentLink

@@ -1,6 +1,6 @@
-import Ember from 'ember';
+import Service from '@ember/service';
 
-export default Ember.Service.extend({
+export default Service.extend({
   exclude: [1,2,7,71,96],
 
   pad(n, width, z) {

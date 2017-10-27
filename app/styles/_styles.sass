@@ -1,7 +1,7 @@
 $color-rosewood : #630000
 
 body
-  padding-top: 96px
+  padding-top: 85px
   padding-bottom: 70px
   background-color: black
   color: white
@@ -16,7 +16,19 @@ header
   padding: 18px 0
   background-color: black
 
+  > .container
+    +media-md
+      display: flex
+      align-items: center
+
+  .pull-left
+    img
+      width: 330px
+      max-width: 100%
+      vertical-align: middle
+
   .pull-right
+    margin-left: auto
     padding: 12px 0
 
   +media-xs
@@ -53,9 +65,9 @@ header
   z-index: 10
   top: 0
   width: 100vw
-  height: 100vh 
+  height: 100vh
 
-  .close  
+  .close
     position: absolute
     right: 5%
     top: -15%
@@ -85,9 +97,25 @@ header
   transform: translateY(-50%)
   width: 100%
   text-align: center
-  
+
   img
     max-width: 100%
+    vertical-align: middle
+
+  .share
+    display: flex
+    justify-content: center
+    width: 100%
+    max-width: 640px
+    margin: 0 auto
+    padding: 10px 0 7px
+    background-color: white
+
+    > div
+      display: inline-block
+
+      &:first-of-type
+        margin-right: 20px
 
 footer
   position: fixed

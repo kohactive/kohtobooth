@@ -6,6 +6,10 @@ module.exports = function(deployTarget) {
     // include other plugin configuration that applies to all deploy targets here
   };
 
+  ENV['pipeline'] = {
+    activateOnDeploy: true
+  };
+
   ENV.s3 = {
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
@@ -20,7 +24,8 @@ module.exports = function(deployTarget) {
     bucket: process.env.AWS_BUCKET,
     region: process.env.AWS_REGION,
     prefix: process.env.AWS_DIRECTORY,
-    allowOverwrite: true
+    allowOverwrite: true,
+    cacheControl: 'max-age=0, no-cache, no-store, must-revalidate'
   };
 
   if (deployTarget === 'development') {

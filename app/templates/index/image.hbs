@@ -1,0 +1,11 @@
+<div class="modal" {{action "close"}}>
+  <div class="overlay"></div>
+  <div class="modal-image">
+    <div class="close">{{fa-icon "times-circle"}}</div>
+    <img src="{{model.webContentLink}}"/>
+    <div class="share">
+      {{twitter-share text=" " via="kohactive" hashtags="darkohbooth"}}
+      {{facebook-share}}
+    </div>
+  </div>
+</div>

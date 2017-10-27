@@ -1,22 +1,17 @@
-import Ember from 'ember';
+import Application from '@ember/application';
 import Resolver from './resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from './config/environment';
 
-let App;
-
-Ember.MODEL_FACTORY_INJECTIONS = true;
-
-App = Ember.Application.extend({
-  ready: function() {
-    Ember.$(document).ready(function() {
-      new freezeframe().freeze();
-    });
-  },
-
+const App = Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+  ready: function() {
+    // Ember.$(document).ready(function() {
+    //   new freezeframe().freeze();
+    // });
+  }
 });
 
 loadInitializers(App, config.modulePrefix);

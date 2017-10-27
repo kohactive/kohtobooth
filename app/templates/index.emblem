@@ -1,14 +1,14 @@
 header
   .container
     .pull-left
-      img src="assets/images/psykoh-logo.png"
+      img src="assets/images/darkoh-logo.png"
     a.pull-right href="https://www.kohactive.com/" target="_blank"
       img src="assets/images/kohactive-logo.png"
 
 .gifs
   .row.omega-sm-3.omega-md-3.omega-lg-4
     each model as |image|
-      gif-thumbnail image=image action="showImage"
+      gif-thumbnail image=image action="showImage" src=image.webContentLink
 
 = outlet
 
